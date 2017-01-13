@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Sweethearts</title>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Wallpoet|Audiowide|Quicksand|Orbitron|Ultra" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="assets/js/script.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <div class="container hide">
+
+        <div class="header gradient_black">
+
+            <div class="logo left">Sw<span>&#9829&#9829</span>tHearts</div>
+
+            <div class="balance right center"><label class="block gradient_orange">$</label><span class="block"></span></div>
+
+        </div>
+
+        <div class="section">
+
+            <div class="layer fader hide"></div>
+
+            <div class="sidebar left">
+
+                <div class="info bar">
+
+                    <table>
+                        <tr><td colspan="2" class="title">Bet</td></tr>
+                        <tr><td colspan="2" class="divisor"></td></tr>
+                        <tr><td>Placed:</td><td class="led"></td></tr>
+                        <tr><td colspan="2" class="divisor"></td></tr>
+                        <tr><td>Won:</td><td class="led"></td></tr>
+                    </table>
+
+                </div>
+
+                <div class="info bar">
+
+                    <table>
+                        <tr><td colspan="2" class="title">Game</td></tr>
+                        <tr><td colspan="2" class="divisor"></td></tr>
+                        <tr><td>Lives:</td><td class="led"></td></tr>
+                        <tr><td colspan="2" class="divisor"></td></tr>
+                        <tr><td>Hearts:</td><td class="led"></td></tr>
+                    </table>
+
+                </div>
+
+                <div class="info bar">
+
+                    <table>
+                        <thead><tr><td colspan="2" class="title">Payouts</td></tr></thead>
+                        <tbody class="items"></tbody>
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="content right"></div>
+
+        </div>
+
+        <div class="section hide">
+
+            <div class="info wall">
+
+                <p>
+                    <b>SWEETHEARTS</b> is a very easy game to play.<br/>
+                    <blockquote>
+                        <b>FIRST</b> select an amount to bet and how many bets to do.<br/>
+                        <b>SECOND</b> select with how many lives you would like to play.<br/>
+                        <b>THIRD</b> Hit the button <b>DEAL</b> to start the game.<br/>
+                        <b>FOURTH</b> click any uncovered card from the deck to reveal it.<br/>
+                        <b>NOTICE</b> The selectors and the <b>DEAL</b> button are located at the bottom bar.
+                    </blockquote>
+                    Right next to the deck of cards you can see the bet you placed, how much you won, as well as the remaining lives and the hearts collected in the current game.<br/>
+                    The payouts table will show how much can be won according with the hearts collected, the bet placed and the number of lives being played.<br/>
+                    The game will finish as soon as all the lives are being consumed and its objective is to reveal as many hearts as you can.
+                </p>
+
+                <p>
+                    <b>GAMEFLOW</b>
+                    <blockquote>
+                        <b>EVERYTIME</b> you hit an uncovered card from the deck you will consume one life<br/>
+                        <b>EVERYTIME</b> you uncover a card with a heart you will collect one heart<br/>
+                        <b>HOWEVER</b> there are multiple bonus cards that can change this dynamic for better or worse
+                    </blockquote>
+                </p>
+
+                <p>There are 80 cards on the deck, <b>20 HEART CARDS</b>, 15 NEUTRAL CARDS and 6 types of bonus cards.</p>
+
+                <table class="reference">
+                    <tr><td class="spacer"></td></tr>
+                    <tr>
+                        <td><div class="panel sample card_plus_one"></div></td>
+                        <td><u>10 EXTRA LIFE CARDS</u><br/><small>If you hit this card you will get an extra life</small></td>
+                        <td class="spacer"></td>
+                        <td><div class="panel sample card_minus_one"></div></td>
+                        <td><u>10 MINUS LIFE CARDS</u><br/><small>If you hit this card you will lose an extra life</small></td>
+                        <td class="spacer"></td>
+                        <td><div class="panel sample card_heartbreak"></div></td>
+                        <td><u>10 MINUS HEART CARDS</u><br/><small>If you hit this card you will lose one of the hearts you have</small></td>
+                        <td></td>
+                    </tr>
+                    <tr><td class="spacer"></td></tr>
+                    <tr>
+                        <td><div class="panel sample card_grenade"></div></td>
+                        <td><u>5 GRENADE CARDS</u><br/><small>2 cards around the card you are clicking will be uncovered</small></td>
+                        <td class="spacer"></td>
+                        <td><div class="panel sample card_hint"></div></td>
+                        <td><u>5 HINT CARDS</u><br/><small>3 cards from the deck will be highlighted and one of them will be a heart</small></td>
+                        <td class="spacer"></td>
+                        <td><div class="panel sample card_game_over"></div></td>
+                        <td><u>5 GAME OVER CARDS</u><br/><small>The game will stop as soon as you hit this card</small></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+                <span tabindex="1" class="block toggler center gradient_white link">x</span>
+
+            </div>
+
+        </div>
+
+        <div class="footer gradient_blue">
+
+            <div class="layer hide"></div>
+
+            <div class="left">
+
+                <div class="selector left">
+
+                    <div class="title gradient_black left center">AMOUNT</div>
+
+                    <div class="wrapper left">
+                        <table>
+                            <tr>
+                                <td><label tabindex="1" class="link">&#9664;</label></td>
+                                <td><span class="block center gradient_black"></span></td>
+                                <td><label tabindex="1" class="link">&#9654;</label></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+                <div class="selector left">
+
+                    <div class="title gradient_black left center">BET</div>
+
+                    <div class="wrapper left">
+                        <table>
+                            <tr>
+                                <td><label tabindex="1" class="link">&#9664;</label></td>
+                                <td><span class="block center gradient_black"></span></td>
+                                <td><label tabindex="1" class="link">&#9654;</label></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+                <div class="selector left">
+
+                    <div class="title gradient_black left center">LIVES</div>
+
+                    <div class="wrapper left">
+                        <table>
+                            <tr>
+                                <td><label tabindex="1" class="link">&#9664;</label></td>
+                                <td><span class="block center gradient_black"></span></td>
+                                <td><label tabindex="1" class="link">&#9654;</label></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="right">
+
+                <button class="button_small toggler gradient_orange link">?</button>
+                <button class="button_big gradient_white link">DEAL</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
